@@ -1,3 +1,5 @@
+@use "/src/sass/base/variables.scss" as *;
+
 h1,
 h2,
 h3,
@@ -48,6 +50,10 @@ img {
 html {
 	font-family: "Barlow", sans-serif;
 	scroll-behavior: smooth;
+}
+
+body {
+	background-color: $light;
 }
 
 .container {
