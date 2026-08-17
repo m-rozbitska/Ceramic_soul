@@ -3,6 +3,7 @@
 
 .promo {
 	padding-top: 50px;
+	position: relative;
 	&__wrapper {
 		margin-top: 50px;
 	}
@@ -20,6 +21,9 @@
 	}
 	&__btn {
 		margin: 18px auto 0 auto;
+	}
+	&__potter {
+		display: none;
 	}
 }
 
@@ -51,3 +55,20 @@
     }
   }
 }
+
+@media screen and (min-width: 1200px) {
+	.promo {
+		&__potter {
+			position: absolute;
+			display: block;
+			width: 450px;
+			height: 633px;
+			top: 0;
+			left: 0;
+		}
+		&__title {
+			padding-left: 571px;
+		}
+	}
+}
+
