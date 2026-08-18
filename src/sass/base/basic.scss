@@ -72,6 +72,11 @@ body {
 @media screen and (min-width: 1200px) {
 	.container {
 		max-width: 1140px;
-		
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.container {
+		max-width: 1440px;
 	}
 }

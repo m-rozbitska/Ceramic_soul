@@ -6,8 +6,8 @@
 		justify-content: space-between;
 	}
 	&__logo {
-		max-width: 100px;
-		max-height: 100px;
+		width: 100px;
+		height: 100px;
 	}
 	&__icons {
 		display: flex;
@@ -69,5 +69,20 @@
 	}
 	.burger {
 		visibility: hidden;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.header{
+		&__logo {
+			width: 150px;
+			height: 151px;
+		}
+		&__nav {
+			margin-top: 36px;
+			ul {
+				gap: 60px;
+			}
+		}
 	}
 }
