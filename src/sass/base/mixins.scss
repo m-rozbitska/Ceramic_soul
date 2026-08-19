@@ -29,3 +29,12 @@
 @mixin promo__btn {
 	margin: 18px auto 0 auto;
 }
+
+@mixin section {
+	padding-top: 60px;
+}
+
+@mixin img {
+	margin-top: 40px;
+	width: 340px;
+}

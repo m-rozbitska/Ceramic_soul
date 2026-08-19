@@ -13,6 +13,7 @@
     "vite": "^6.1.0"
   },
   "dependencies": {
-    "postcss-pxtorem": "^6.1.0"
+    "postcss-pxtorem": "^6.1.0",
+    "purecss": "^3.0.0"
   }
 }

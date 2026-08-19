@@ -1,0 +1,37 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.activities {
+	@include section;
+	&__wrapper {
+		margin-top: 20px;
+		row-gap: 40px;
+	}
+	&__img {
+		margin-top: 40px;
+	}
+/* 	&__subtitle {
+		margin-top: 40px;
+	} */
+/* 	&__img-first {
+		@include img;
+		height: 194px;
+	}
+	&__img-second {
+		@include img;
+		height: 128px;
+	} */
+	&__text {
+		margin-top: 20px;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: normal;
+		color: $dark;
+		a {
+			text-decoration: none;
+		}
+		&_colored {
+			color: #C69978;
+		}
+	}
+}
