@@ -9,12 +9,21 @@
 
 .title-h2 {
 	@include title;
-	font-size: 36px;
+	font-size: 32px;
 }
 
 .title-h3 {
 	@include title;
 	font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	.title-h2 {
+		font-size: 36px;
+	}
+	.title-h3 {
+		font-size: 24px;
+	}
 }
 
 @media screen and (min-width: 1920px) {

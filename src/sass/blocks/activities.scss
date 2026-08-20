@@ -8,19 +8,10 @@
 		row-gap: 40px;
 	}
 	&__img {
+		width: 100%;
 		margin-top: 40px;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 	}
-/* 	&__subtitle {
-		margin-top: 40px;
-	} */
-/* 	&__img-first {
-		@include img;
-		height: 194px;
-	}
-	&__img-second {
-		@include img;
-		height: 128px;
-	} */
 	&__text {
 		margin-top: 20px;
 		font-weight: 400;
@@ -31,7 +22,20 @@
 			text-decoration: none;
 		}
 		&_colored {
-			color: #C69978;
+			color: $ceramic;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.activities {
+		padding-inline: 95px;
+		&__wrapper {
+			margin-top: 40px;
+		}
+		&__text {
+			margin-top: 25px;
+			font-size: 20px;
 		}
 	}
 }
