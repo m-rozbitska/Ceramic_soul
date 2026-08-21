@@ -23,6 +23,7 @@
 		}
 		&_colored {
 			color: $ceramic;
+			font-weight: 500;
 		}
 	}
 }
@@ -36,6 +37,26 @@
 		&__text {
 			margin-top: 25px;
 			font-size: 20px;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.activities {
+		padding-inline: 0px;
+		&__wrapper {
+			margin-top: 80px;
+		}
+		&__img {
+			margin-top: 60px;
+		}
+		&__col {
+			padding: 0 10px;
+		}
+		&__text {
+			&_fixed {
+				width: 556px;
+			}
 		}
 	}
 }
