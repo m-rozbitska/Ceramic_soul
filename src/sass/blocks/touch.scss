@@ -1,0 +1,33 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.touch {
+	@include section;
+	&__col {
+		margin-top: 59px;
+	}
+	&__fieldset {
+		border: none;
+		padding: 0;
+		margin: 0;
+	}
+	&__input {
+		height: 48px;
+	}
+	&__img,
+	&__decor{
+		display: none;
+	}
+	&__textarea {
+		height: 132px;
+		resize: none;
+	}
+	&__agreement {
+		margin-top: 20px;
+	}
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+

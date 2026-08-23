@@ -4,7 +4,7 @@
 .activities {
 	@include section;
 	&__wrapper {
-		margin-top: 20px;
+/* 		margin-top: 20px; */
 		row-gap: 40px;
 	}
 	&__img {
@@ -32,7 +32,7 @@
 	.activities {
 		padding-inline: 95px;
 		&__wrapper {
-			margin-top: 40px;
+	/* 		margin-top: 40px; */
 		}
 		&__text {
 			margin-top: 25px;
@@ -45,7 +45,7 @@
 	.activities {
 		padding-inline: 0px;
 		&__wrapper {
-			margin-top: 80px;
+		/* 	margin-top: 80px; */
 		}
 		&__img {
 			margin-top: 60px;

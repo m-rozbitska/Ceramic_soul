@@ -8,6 +8,30 @@
 	font-size: 20px;
 }
 
+.btn-request {
+	@include button;
+	margin-top: 20px;
+	width: 220px;
+	height: 40px;
+	font-size: 16px;
+		&:hover {
+		border: 1px solid $ceramic;
+		color: $ceramic;
+		}
+		&:active {
+			border: 1px solid $ceramic;
+			color: $dark;
+		}
+		&:focus {
+			border: 1px solid $ceramic;
+			color: $dark;
+		}
+		&:disabled {
+			border: 1px solid $ui-disabled;
+			color: $ui-disabled;
+		}
+	}
+
 @media screen and (min-width: 1200px) {
 	.btn-default {
 			&:hover {
