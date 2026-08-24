@@ -11,6 +11,11 @@
 		padding: 0;
 		margin: 0;
 	}
+	&__label {
+			&:nth-child(2) {
+			margin-top: 8px;
+		}
+	}
 	&__input {
 		height: 48px;
 	}
@@ -49,9 +54,34 @@
 	.touch {
 		&__img {
 			display: block;
+			width: 550px;
+			height: 342px;
+			object-fit: cover;
+			box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
 		}
 		&__form {
 			padding-left: 20px;
+		}
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.touch {
+		padding-top: 100px;
+		&__img {
+			width: 100%;
+			height: 356px;
+		}
+		&__form {
+			width: auto;
+			padding-left: 143px;
+		}
+		&__fieldset {
+			display: flex;
+			column-gap: 45px;
+		}
+		&__decor {
+			right: 75px;
 		}
 	}
 }
