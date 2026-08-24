@@ -3,7 +3,7 @@
 
 .touch {
 	@include section;
-	&__col {
+	&__wrapper {
 		margin-top: 59px;
 	}
 	&__fieldset {
@@ -43,4 +43,15 @@
 			right: 0;
     }
   }
+}
+
+@media screen and (min-width: 1200px) {
+	.touch {
+		&__img {
+			display: block;
+		}
+		&__form {
+			padding-left: 20px;
+		}
+	}
 }
