@@ -33,8 +33,14 @@
 
 @media screen and (min-width: 768px) {
   .touch {
+		&__form {
+			position: relative;
+		}
     &__decor {
       display: block;
+			position: absolute;
+			bottom: 0;
+			right: 0;
     }
   }
 }

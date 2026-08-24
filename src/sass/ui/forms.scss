@@ -5,14 +5,17 @@
 	@include form-area;
 	width: 300px;
 	&:hover {
-		border: 1px solid $dark;
+		border: none;
+		outline: 1px solid $dark;
 	}
 	&:focus {
-		border: 1px solid $dark;
+		border: none;
+		outline: 1px solid $dark;
 	}
-	&:invalid {
-		border: 1px solid $ui-error;
-	}
+/* 	&:invalid {
+		border: none;
+		outline: 1px solid $ui-error;
+	} */
 }
 
 .form {
@@ -23,9 +26,16 @@
 	}
 }
 
+
 .checkbox {
 	display: flex;
 	gap: 7px;
 	align-items: center;
+	&__label {
+		a {
+			text-decoration: none;
+			color: #A22DC6;
+		}
+	}
 }
 

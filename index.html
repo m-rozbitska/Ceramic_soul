@@ -84,7 +84,7 @@
 					</div>
 
 					<div class="pure-u-1 pure-u-xl-1-2 pure-u-xxl-3-5 touch__col">
-						<form action="#">
+						<form class="touch__form" action="#">
 							<fieldset class="touch__fieldset">
 								<div class="touch__input-block">
 									<label for="name" class="form__label touch__label">
@@ -97,6 +97,7 @@
 										id="name"
 										name="name"
 										placeholder="Name"
+										required
 									>
 								</div>
 
@@ -111,6 +112,7 @@
 										id="email"
 										name="email"
 										placeholder="Email"
+										required
 									>
 								</div>
 							</fieldset>
@@ -124,10 +126,12 @@
 								name="question"
 								id="question"
 								placeholder="Question"
+								required
 							></textarea>
 
 							<div class="checkbox touch__agreement">
 								<input
+									required
 									class="checkbox__input"
 									type="checkbox"
 									id="terms-touch"
@@ -142,17 +146,16 @@
 								</label>
 							</div>
 
-							<div class="touch__footer">
-								<button class="btn-request touch__btn">
+							<button class="btn-request touch__btn">
 									send request
-								</button>
+							</button>
 
-								<img
-									class="touch__decor"
-									src="/src/img/form/vase.png"
-									alt="vase"
-								>
-							</div>
+							<img
+								class="touch__decor"
+								src="/src/img/form/vase.png"
+								alt="vase"
+							>
+
 						</form>
 					</div>
 				</div>

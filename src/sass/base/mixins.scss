@@ -46,14 +46,18 @@
 	align-items: flex-start;
 	padding: 10px 15px;
 	background: #FFFFFF;
-	border: 1px solid transparent;
+	border: 1px solid #e2e1e5;
 	border-radius: 2px;
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: normal;
-	color: $ui-disabled;
-	width: 300px;
+	color: $dark;
+	width: 100%;
+	&::placeholder {
+		color: $ui-disabled;
+		font-size: 14px;
+	}
 }
 

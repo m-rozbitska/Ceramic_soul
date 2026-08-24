@@ -14,17 +14,9 @@
 	width: 220px;
 	height: 40px;
 	font-size: 16px;
-		&:hover {
-		border: 1px solid $ceramic;
-		color: $ceramic;
-		}
-		&:active {
-			border: 1px solid $ceramic;
-			color: $dark;
-		}
 		&:focus {
 			border: 1px solid $ceramic;
-			color: $dark;
+			outline: 1px solid $ceramic;
 		}
 		&:disabled {
 			border: 1px solid $ui-disabled;
@@ -43,6 +35,16 @@
 				box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.4);
 				color: $dark;
 				border: none;
+			}
+		}
+		.btn-request {
+			&:active {
+				border: 1px solid $ceramic;
+				outline: 1px solid $ceramic;
+			}
+			&:hover {
+				border: 1px solid $ceramic;
+				color: $ceramic;
 			}
 		}
 	}
