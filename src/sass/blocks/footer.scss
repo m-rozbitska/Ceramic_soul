@@ -110,7 +110,6 @@
 			}
 		}
 	}
-
 		&__copyright {
 		margin-top: 40px;
 		text-align: center;
@@ -132,9 +131,23 @@
 		&__feedback {
 			width: 100%;
 		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.footer {
+		&__feedback {
+			width: auto;
+		}
+		&__links,
+		&__social {
+			margin-top: 0;
+		}
+		&__header {
+			margin-top: 0;
+		}
 		&__copyright {
 			margin-top: 50px;
 		}
 	}
 }
-
