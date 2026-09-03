@@ -118,6 +118,9 @@
 			text-transform: uppercase;
 			color: $dark;
 		}
+		&__menu {
+			display: none;
+		}
 	}
 	.burger {
 		visibility: hidden;
