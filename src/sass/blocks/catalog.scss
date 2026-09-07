@@ -9,7 +9,7 @@
 	&__tabs {
 		margin-top: 60px;
 		border: 1px solid $dark;
-		padding: 13px 35px;
+		padding: 13px 25px;
 		display: flex;
 		column-gap: 50px;
 		row-gap: 13px;
@@ -22,7 +22,7 @@
 		background: none;
 		font-weight: 500;
 		font-size: 20px;
-		line-height: 24px;
+		line-height: normal;
 		text-transform: uppercase;
 		color: #000000;
 		&_active::before {
@@ -46,11 +46,55 @@
 		background: $light;
 		border: 1px solid $dark;
 		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+		&-img {
+			width: 100%;
+		}
 		&-info {
 			padding: 11px 10px 17px 11px;
 		}
 		&-price {
 			margin-top: 8px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px)  {
+	.catalog {
+		&__tabs {
+			width: 459px;
+			flex-wrap: nowrap;
+			column-gap: 49px;
+		}
+		&__content {
+			padding: 10px;
+			position: relative;
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 20px;
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 200px;
+				height: 1px;
+				background-color: $dark;
+			}
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 1px;
+				height: 200px;
+				background-color: $dark;
+			}
+		}
+		&__item {
+			width: 340px;
+			&-img {
+				width: 340px;
+			}
 		}
 	}
 }
