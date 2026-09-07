@@ -101,9 +101,26 @@
 
 @media screen and (min-width: 1200px) {
 	.catalog {
+		padding-top: 40px;
+		padding-bottom: 100px;
 		&__content {
 			padding: 25px;
 			gap: 35px;
+		}
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.catalog {
+		&__title {
+			margin-top: 100px;
+		}
+		&__content {
+			column-gap: 80px;
+			row-gap: 25px;
+		}
+		&__item {
+			width: 287px;
 		}
 	}
 }
