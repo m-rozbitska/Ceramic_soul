@@ -1,0 +1,34 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.blog {
+	&__wrapper {
+		margin-top: 60px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 40px;
+	}
+	&__subtitle {
+		text-align: left;
+	}
+	&__card {
+		background: $light;
+		border: 1px solid $dark;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+	}
+	&__img {
+		max-inline-size: calc(100% + 2px);
+		transform: translateX(-1px) translateY(-1px);
+	}
+	&__data {
+		&-column {
+			display: flex;
+			flex-direction: column;
+			gap: 25px;
+			padding: 25px 25px 0 25px;
+		}
+	}
+	&__text {
+		margin-top: 25px;
+		padding: 0 25px 25px 25px;
+	}
+}
