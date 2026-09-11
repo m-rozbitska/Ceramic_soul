@@ -69,3 +69,17 @@
 		}
 	}
 }
+
+@media screen and (min-width: 1920px) {
+	.blog {
+		&__wrapper {
+			align-items: stretch;
+		}
+		&__card {
+			width: 670px;
+		}
+		&__img {
+			width: 335px;
+		}
+	}
+}
