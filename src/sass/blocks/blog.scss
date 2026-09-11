@@ -52,3 +52,20 @@
 		}
 	}
 }
+
+@media screen and (min-width: 1200px) {
+	.blog {
+		&__wrapper {
+			gap: 50px;
+			align-items: flex-start;
+		}
+		&__card {
+			width: 520px;
+			min-height: 375px;
+		}
+		&__img {
+			height: 241px;
+			object-fit: cover;
+		}
+	}
+}
