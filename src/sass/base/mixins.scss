@@ -61,3 +61,21 @@
 	}
 }
 
+@mixin angle-decoration {
+	&::after,
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $dark;
+	}
+	&::after {
+		width: 200px;
+		height: 1px;
+	}
+	&::before {
+		width: 1px;
+		height: 200px;
+	}
+}
