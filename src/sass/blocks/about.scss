@@ -1,0 +1,44 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.about {
+	padding-top: 50px;
+	&__title {
+		margin-top: 60px;
+	}
+	&__wrapper {
+		margin-top: 60px;
+		gap: 35px;
+	}
+	&__text {
+		p {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: normal;
+			color: $dark;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.about {
+		&__wrapper {
+			gap: 0px;
+		}
+		&__img {
+			padding: 0px 20px 0px 0px;
+		}
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.about {
+		padding-top: 40px;
+		&__title {
+			margin-top: 100px;
+		}
+		&__wrapper {
+			margin-top: 100px;
+		}
+	}
+}
