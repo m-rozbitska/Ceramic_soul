@@ -1,2 +1,14 @@
 @use "/src/sass/base/variables.scss" as *;
 @use "/src/sass/base/mixins.scss" as *;
+
+.findus {
+	@include section;
+	padding-bottom: 60px;
+	&__wrapper {
+		margin-top: 60px;
+		iframe {
+			width: 100%;
+			height: 206px;
+		}
+	}
+}
