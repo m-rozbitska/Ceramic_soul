@@ -12,3 +12,28 @@
 		}
 	}
 }
+
+@media screen and (min-width: 768px) {
+	.findus {
+		&__wrapper {
+			padding: 0 29px;
+			iframe {
+				height: 400px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.findus {
+		&__wrapper {
+			padding: 0;
+			iframe {
+				display: block;
+				margin: 0 auto;
+				width: 663px;
+				height: 500px;
+			}
+		}
+	}
+}
