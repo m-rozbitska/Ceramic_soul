@@ -97,7 +97,7 @@
 					</div>
 
 					<div class="pure-u-1 pure-u-xl-1-2 pure-u-xxl-3-5 touch__col">
-						<form class="touch__form" action="#">
+						<form class="touch__form" action="#" novalidate>
 							<fieldset class="touch__fieldset">
 								<div class="touch__input-block">
 									<label for="name" class="form__label touch__label">
@@ -142,6 +142,8 @@
 								required
 							></textarea>
 
+							<div class="error-message"></div>
+
 							<div class="checkbox touch__agreement">
 								<input
 									required
@@ -157,7 +159,10 @@
 									I agree with the
 									<a class="checkbox__link" href="#">terms</a>
 								</label>
+
 							</div>
+
+							<div class="checkbox-error-message"></div>
 
 							<button class="btn-request touch__btn">
 									send request
@@ -216,11 +221,18 @@
 								class="footer__input"
 								placeholder="Enter your e-mail"
 								required
+								id="footer__email"
 							/>
+							<div class="email-error-message"></div>
 							<div class="footer__checkbox">
-								<input type="checkbox" class="footer__checkbox-input" id="footer__label">
+								<input 
+									type="checkbox" 
+									class="footer__checkbox-input" 
+									id="footer__checkbox-id"
+								>
 								<label for="footer__label">I agree with the <a href="#">terms</a></label>
 							</div>
+							<div class="check-error-message"></div>
 							<button class="btn-footer">submit</button>
 						</form>
 					</div>

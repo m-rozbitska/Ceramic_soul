@@ -1,5 +1,6 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
+import JustValidate from 'just-validate';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -65,3 +66,97 @@ try {
 
 	contents.forEach((c, i) => (c.style.display = i === 0 ? "flex" : "none"));
 } catch (e) {}
+
+
+try {
+	const validator = new JustValidate('.touch__form', {submitFormAutomatically: true});
+
+	validator
+  .addField('#name', [
+    {
+      rule: 'required',
+			errorMessage: "Please fill the name!",
+    },
+    {
+      rule: 'minLength',
+      value: 3,
+			errorMessage: "3 chars minimum!",
+    },
+  ])
+
+	.addField('#email', [
+    {
+      rule: 'required',
+    },
+    {
+      rule: 'email',
+			errorMessage: "Email has invalid format!",
+    },
+  ])
+
+	.addField('#question', [
+    {
+      rule: 'required',
+    },
+		{
+			rule: "minLength",
+			value: 5,
+		},
+  ],
+		{
+			errorsContainer: document
+			.querySelector("#question")
+			.parentElement.querySelector(".error-message"),
+		} 
+)
+
+	.addField('#terms-touch', [
+    {
+    	rule: 'required',
+    }, 
+  ],
+	{
+		errorsContainer: document
+		.querySelector("#terms-touch")
+		.parentElement.parentElement.querySelector(".checkbox-error-message"),
+	} 
+)
+} catch (e) {}
+
+try {
+	const footerValidator = new JustValidate(".footer__form", {submitFormAutomatically: true})
+
+	footerValidator
+	.addField('#footer__email', [
+    {
+      rule: 'required',
+    },
+		{
+      rule: 'email',
+			errorMessage: "Email has invalid format!",
+    },
+  ],
+	{
+		errorsContainer: document
+		.querySelector("#footer__email")
+		.parentElement.querySelector(".email-error-message"),
+	}
+)
+
+	.addField('#footer__checkbox_id', [
+		{
+    	rule: 'required',
+    }, 
+  ],
+	{
+		errorsContainer: document
+		.querySelector("#footer__checkbox-input")
+		.parentElement.parentElement.querySelector(".check-error-message"),
+	}
+)
+
+} catch (e) {}
+
+
+
+

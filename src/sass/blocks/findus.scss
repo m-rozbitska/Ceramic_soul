@@ -37,3 +37,16 @@
 		}
 	}
 }
+
+@media screen and (min-width: 1920px) {
+	.findus {
+		padding-bottom: 100px;
+		&__wrapper {
+			margin-top: 80px;
+			iframe {
+				width: 801px;
+				height: 604px;
+			}
+		}
+	}
+}
