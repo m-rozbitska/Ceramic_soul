@@ -70,6 +70,10 @@
 		&__title {
 			padding-left: 571px;
 		}
+		&__cta {
+			animation-name: slideIn;
+			animation-duration: 3s;
+		}
 	}
 }
 
