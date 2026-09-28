@@ -121,6 +121,18 @@ try {
 		.parentElement.parentElement.querySelector(".checkbox-error-message"),
 	} 
 )
+.onSuccess(( event ) => {
+  const form =  event.currentTarget;
+	const formData = new FormData(form);
+
+	fetch("https://httpbin.org/post", {
+		method: "POST",
+		body: formData,
+	}).then(res => res.json()).then(data => {
+		console.log("Success", data);
+		form.reset();
+	})
+});
 } catch (e) {}
 
 try {
@@ -130,10 +142,10 @@ try {
 	.addField('#footer__email', [
     {
       rule: 'required',
+			errorMessage: "Email has invalid format!",
     },
 		{
       rule: 'email',
-			errorMessage: "Email has invalid format!",
     },
   ],
 	{
@@ -143,18 +155,30 @@ try {
 	}
 )
 
-	.addField('#footer__checkbox_id', [
+	.addField('.footer__checkbox', [
 		{
     	rule: 'required',
+			errorMessage: "This field is required!",
     }, 
   ],
 	{
 		errorsContainer: document
-		.querySelector("#footer__checkbox-input")
+		.querySelector("#footer__checkbox_id")
 		.parentElement.parentElement.querySelector(".check-error-message"),
 	}
 )
+.onSuccess(( event ) => {
+  const footerForm =  event.currentTarget;
+	const footerFormData = new FormData(form);
 
+	fetch("https://httpbin.org/post", {
+		method: "POST",
+		body: footerFormData,
+	}).then(res => res.json()).then(data => {
+		console.log("Success", data);
+		footerForm.reset();
+	})
+});
 } catch (e) {}
 
 
