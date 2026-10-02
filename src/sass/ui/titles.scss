@@ -12,6 +12,10 @@
 	font-size: 32px;
 }
 
+.title-h3 {
+	@include title;
+}
+
 .title-small {
 	@include title;
 	font-size: 20px;
